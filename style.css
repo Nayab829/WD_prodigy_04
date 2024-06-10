@@ -81,7 +81,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px var(--section-padding);
+  padding: 7px var(--section-padding);
   position: fixed;
   top: 0;
   left: 0;
@@ -89,7 +89,10 @@ header nav {
   z-index: 1000;
   backdrop-filter: blur(20px);
 }
-
+nav.sticky{
+  background-color:  #222;
+  
+}
 .logo {
   font-size: 30px;
 }
