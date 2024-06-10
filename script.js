@@ -18,3 +18,11 @@ menu.classList.toggle("active")
 function closeMenu(){
 menu.classList.remove("active")
 }
+window.onscroll = ()=>{
+  menu.classList.remove("active");
+  if(document.documentElement.scrollTop > 20){
+    document.querySelector('nav').classList.add("sticky");
+  }else{
+    document.querySelector('nav').classList.remove("sticky");
+  }
+}
